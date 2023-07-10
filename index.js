@@ -13,29 +13,9 @@ console.log("connected");
 const app = express();
 const PORT=3000;
 
-
-
-
-// app.get("/",(req,res)=>{
-//     res.send("<p> hello</p>");
-// })
-
-
 app.get("/",(req,res)=>{
     res.send("<p> hello</p>");
 })
-
-
-// app.get("/list_movies", (req, res) => {
-//     fs.readFile(__dirname + '/' + 'movie.json', 'utf8', (err, data) => {
-//         res.end(data);
-//     });
-// });
-// app.post("/list_movies", (req, res) => {
-//     fs.appendFile(__dirname + '/' + 'movie.json','utf8', (err, data) => {
-//         res.end(data);
-//     });
-// });
 
 const Geetaschema = new mongoose.Schema({
     chapter:{
